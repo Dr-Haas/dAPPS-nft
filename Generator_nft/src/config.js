@@ -1,13 +1,13 @@
-const basePath = process.cwd();
+ const basePath = process.cwd();
 const { MODE } = require(`${basePath}/constants/blend_mode.js`);
 const { NETWORK } = require(`${basePath}/constants/network.js`);
 
 const network = NETWORK.eth;
 
 // General metadata for Ethereum
-const namePrefix = "Your Collection";
-const description = "Remember to replace this description";
-const baseUri = "ipfs://NewUriToReplace";
+const namePrefix = "Es Un Bobo";
+const description = "Es un bobo is a first collection NFT from Dr.Haas";
+const baseUri = "ipfs://QmaKRd8H1uAEgyuYFC9kP8V6brcqDYQQUNbczwD8aEtaGy";
 
 const solanaMetadata = {
   symbol: "YC",
@@ -24,15 +24,13 @@ const solanaMetadata = {
 // If you have selected Solana then the collection starts from 0 automatically
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    growEditionSizeTo: 500,
     layersOrder: [
-      { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Fond" },
+      { name: "Corps" },
+      { name: "Bouche" },
+      { name: "Eyes" },
+      { name: "Chapeaux" },
     ],
   },
 ];
@@ -42,8 +40,8 @@ const shuffleLayerConfigurations = false;
 const debugLogs = false;
 
 const format = {
-  width: 512,
-  height: 512,
+  width: 500,
+  height: 500,
   smoothing: false,
 };
 

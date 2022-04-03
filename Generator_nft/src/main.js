@@ -353,9 +353,11 @@ const startCreating = async () => {
     ? console.log("Editions left to create: ", abstractedIndexes)
     : null;
   while (layerConfigIndex < layerConfigurations.length) {
+
     const layers = layersSetup(
       layerConfigurations[layerConfigIndex].layersOrder
     );
+    console.log("\n\nICI", "\n\n");
     while (
       editionCount <= layerConfigurations[layerConfigIndex].growEditionSizeTo
     ) {
